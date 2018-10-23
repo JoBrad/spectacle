@@ -1,0 +1,624 @@
+/*
+ * FORMS STYLES
+ */
+ input[type=text],
+ input[type=password],
+ input[type=email],
+ input[type=tel],
+ input[type=date],
+ input[type=month],
+ input[type=week],
+ input[type=time],
+ input[type=number],
+ input[type=search], textarea {
+   border: 1px solid #aaa;
+   background-color: #fafafa; }
+   input[type=text]:active, input[type=text]:focus,
+   input[type=password]:active,
+   input[type=password]:focus,
+   input[type=email]:active,
+   input[type=email]:focus,
+   input[type=tel]:active,
+   input[type=tel]:focus,
+   input[type=date]:active,
+   input[type=date]:focus,
+   input[type=month]:active,
+   input[type=month]:focus,
+   input[type=week]:active,
+   input[type=week]:focus,
+   input[type=time]:active,
+   input[type=time]:focus,
+   input[type=number]:active,
+   input[type=number]:focus,
+   input[type=search]:active,
+   input[type=search]:focus, textarea:active, textarea:focus {
+     border: 1px solid #666; }
+
+ .gform_wrapper form li, .gform_wrapper li {
+   margin: 2em 0 0; }
+ .gform_wrapper .ginput_complex span label {
+   font-weight: 300; }
+ .gform_wrapper .gform_body .top_label .gfield_label {
+   margin: 0; }
+
+ #contact-form label {
+   text-transform: uppercase;
+   margin-top: 5px; }
+
+ #contact-form select {
+   height: 35px; }
+
+ #i3-search-form input {
+   background: black !important;
+   border: none !important; }
+
+ /*
+  * SPECIAL EFFECTS
+  */
+ .ts-hover-enlarge {
+   -moz-transition: all 0.3s;
+   -webkit-transition: all 0.3s;
+   transition: all 0.3s; }
+   .ts-hover-enlarge:hover {
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1); }
+
+ .board .pp-member-designation {
+   cursor: pointer; }
+
+ /*
+  * LEFT SIDE NAV
+  */
+ section#sidebar {
+   padding: 1em 0; }
+   section#sidebar:before {
+     background-image: url(../images/metal.jpg);
+     background-position: center center;
+     height: 100%;
+     width: 100%;
+     background-repeat: repeat-y;
+     background-size: cover;
+     content: "";
+     position: fixed;
+     left: 0;
+     top: 0;
+     right: 0;
+     z-index: -1;
+     display: block;
+     opacity: .5;
+     -webkit-filter: blur(1px);
+     -moz-filter: blur(1px);
+     -o-filter: blur(1px);
+     -ms-filter: blur(1px);
+     filter: blur(1px); }
+
+ #i3-logo a {
+   display: block;
+   text-indent: -9999px;
+   width: 98px;
+   height: 96px;
+   background-image: url(../images/logo.png);
+   background-size: 98px 96px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   width: 100%; }
+
+ #menu-main-menu {
+   clear: both;
+   margin: 0;
+   padding: 0;
+   background: #315396;
+   box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5); }
+   #menu-main-menu li {
+     display: block;
+     float: none; }
+
+ #i3-search-form {
+   clear: both;
+   display: block;
+   margin: 1.05em 0 1em;
+   padding: 0 1em;
+   float: right;
+   width: 76%; }
+   #i3-search-form input {
+     background: #888;
+     border-radius: 0;
+     box-shadow: inset 0px 0px 15px #000;
+     color: #fff; }
+     #i3-search-form input::-webkit-input-placeholder {
+       /* Chrome */
+       color: #ccc; }
+     #i3-search-form input:-ms-input-placeholder {
+       /* IE 10+ */
+       color: #ccc; }
+     #i3-search-form input::-moz-placeholder {
+       /* Firefox 19+ */
+       color: #ccc;
+       opacity: 1; }
+     #i3-search-form input:-moz-placeholder {
+       /* Firefox 4 - 18 */
+       color: #ccc;
+       opacity: 1; }
+
+ #i3-left-navigation ul {
+   max-height: 0px;
+   overflow: hidden;
+   transition: all .5s ease-in;
+   -webkit-transition: all .5s ease-in;
+   -moz-transition: all .5s ease-in;
+   -ms-transition: all .5s ease-in; }
+ #i3-left-navigation.menu-open ul {
+   max-height: 999px; }
+ #i3-left-navigation li {
+   text-align: center;
+   position: relative; }
+   #i3-left-navigation li a {
+     display: block;
+     padding: .75em;
+     color: #fff;
+     font-weight: 500; }
+   #i3-left-navigation li ul.sub-menu {
+     overflow: hidden;
+     max-height: 0px;
+     transition: max-height .5s ease-in;
+     -webkit-transition: max-height .5s ease-in;
+     -moz-transition: max-height .5s ease-in;
+     -ms-transition: max-height .5s ease-in;
+     -o-transition: max-height .5s ease-in;
+     margin: 0;
+     padding: 0; }
+     #i3-left-navigation li ul.sub-menu.sub-menu-open {
+       max-height: 999px;
+       padding: 10px 0; }
+
+ #menu-main-menu li ul.sub-menu {
+   background: #fff; }
+   #menu-main-menu li ul.sub-menu a {
+     color: #337ab7; }
+
+ #i3-mobile-hamburger-container {
+   float: left;
+   padding-left: 10px;
+   width: 24%;
+   overflow: hidden;
+   margin-bottom: 10px; }
+   #i3-mobile-hamburger-container *, #i3-mobile-hamburger-container *:before, #i3-mobile-hamburger-container *:after {
+     box-sizing: border-box; }
+   #i3-mobile-hamburger-container #hamburger {
+     cursor: pointer; }
+   #i3-mobile-hamburger-container .hamburglar {
+     transform: scale(1);
+     margin: 0px auto;
+     position: relative;
+     display: block;
+     width: 68px;
+     height: 68px;
+     background: transparent;
+     -webkit-touch-callout: none;
+     user-select: none; }
+   #i3-mobile-hamburger-container .path-burger {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 68px;
+     width: 68px;
+     mask: url(#mask);
+     -webkit-mask-box-image: url(https://raygun.io/upload/mask.svg); }
+   #i3-mobile-hamburger-container .animate-path {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 68px;
+     height: 68px; }
+   #i3-mobile-hamburger-container .path-rotation {
+     height: 34px;
+     width: 34px;
+     margin: 34px 34px 0 0;
+     transform: rotate(0deg);
+     transform-origin: 100% 0; }
+     #i3-mobile-hamburger-container .path-rotation:before {
+       content: '';
+       display: block;
+       width: 30px;
+       height: 34px;
+       margin: 0 4px 0 0;
+       background: #000; }
+ @keyframes rotate-out {
+   0% {
+     transform: rotate(0deg); }
+   40% {
+     transform: rotate(180deg); }
+   100% {
+     transform: rotate(360deg); } }
+ @keyframes rotate-in {
+   0% {
+     transform: rotate(360deg); }
+   40% {
+     transform: rotate(180deg); }
+   100% {
+     transform: rotate(0deg); } }
+   #i3-mobile-hamburger-container .hamburglar.is-open .path {
+     animation: dash-in 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .hamburglar.is-open .animate-path {
+     animation: rotate-in 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .hamburglar.is-closed .path {
+     animation: dash-out 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .hamburglar.is-closed .animate-path {
+     animation: rotate-out 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .path {
+     stroke-dasharray: 240;
+     stroke-dashoffset: 240;
+     stroke-linejoin: round; }
+ @keyframes dash-in {
+   0% {
+     stroke-dashoffset: 240; }
+   40% {
+     stroke-dashoffset: 240; }
+   100% {
+     stroke-dashoffset: 0; } }
+ @keyframes dash-out {
+   0% {
+     stroke-dashoffset: 0; }
+   40% {
+     stroke-dashoffset: 240; }
+   100% {
+     stroke-dashoffset: 240; } }
+   #i3-mobile-hamburger-container .burger-icon {
+     position: absolute;
+     padding: 20px 16px;
+     height: 68px;
+     width: 68px; }
+   #i3-mobile-hamburger-container .burger-container {
+     position: relative;
+     height: 28px;
+     width: 36px; }
+   #i3-mobile-hamburger-container .burger-bun-top,
+   #i3-mobile-hamburger-container .burger-bun-bot,
+   #i3-mobile-hamburger-container .burger-filling {
+     position: absolute;
+     display: block;
+     height: 4px;
+     width: 36px;
+     border-radius: 2px;
+     background: #000; }
+   #i3-mobile-hamburger-container .burger-bun-top {
+     top: 0;
+     transform-origin: 34px 2px; }
+   #i3-mobile-hamburger-container .burger-bun-bot {
+     bottom: 0;
+     transform-origin: 34px 2px; }
+   #i3-mobile-hamburger-container .burger-filling {
+     top: 12px; }
+   #i3-mobile-hamburger-container .burger-ring {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 68px;
+     height: 68px; }
+   #i3-mobile-hamburger-container .svg-ring {
+     width: 68px;
+     height: 68px; }
+     #i3-mobile-hamburger-container .svg-ring path {
+       stroke: #000; }
+   #i3-mobile-hamburger-container .hamburglar.is-open .burger-bun-top {
+     animation: bun-top-out 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .hamburglar.is-open .burger-bun-bot {
+     animation: bun-bot-out 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .hamburglar.is-closed .burger-bun-top {
+     animation: bun-top-in 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .hamburglar.is-closed .burger-bun-bot {
+     animation: bun-bot-in 0.6s linear normal;
+     animation-fill-mode: forwards; }
+ @keyframes bun-top-out {
+   0% {
+     left: 0;
+     top: 0;
+     transform: rotate(0deg); }
+   20% {
+     left: 0;
+     top: 0;
+     transform: rotate(15deg); }
+   80% {
+     left: -5px;
+     top: 0;
+     transform: rotate(-60deg); }
+   100% {
+     left: -5px;
+     top: 1px;
+     transform: rotate(-45deg); } }
+ @keyframes bun-bot-out {
+   0% {
+     left: 0;
+     transform: rotate(0deg); }
+   20% {
+     left: 0;
+     transform: rotate(-15deg); }
+   80% {
+     left: -5px;
+     transform: rotate(60deg); }
+   100% {
+     left: -5px;
+     transform: rotate(45deg); } }
+ @keyframes bun-top-in {
+   0% {
+     left: -5px;
+     bot: 0;
+     transform: rotate(-45deg); }
+   20% {
+     left: -5px;
+     bot: 0;
+     transform: rotate(-60deg); }
+   80% {
+     left: 0;
+     bot: 0;
+     transform: rotate(15deg); }
+   100% {
+     left: 0;
+     bot: 1px;
+     transform: rotate(0deg); } }
+ @keyframes bun-bot-in {
+   0% {
+     left: -5px;
+     transform: rotate(45deg); }
+   20% {
+     left: -5px;
+     bot: 0;
+     transform: rotate(60deg); }
+   80% {
+     left: 0;
+     bot: 0;
+     transform: rotate(-15deg); }
+   100% {
+     left: 0;
+     transform: rotate(0deg); } }
+   #i3-mobile-hamburger-container .hamburglar.is-open .burger-filling {
+     animation: burger-fill-out 0.6s linear normal;
+     animation-fill-mode: forwards; }
+   #i3-mobile-hamburger-container .hamburglar.is-closed .burger-filling {
+     animation: burger-fill-in 0.6s linear normal;
+     animation-fill-mode: forwards; }
+ @keyframes burger-fill-in {
+   0% {
+     width: 0;
+     left: 36px; }
+   40% {
+     width: 0;
+     left: 40px; }
+   80% {
+     width: 36px;
+     left: -6px; }
+   100% {
+     width: 36px;
+     left: 0px; } }
+ @keyframes burger-fill-out {
+   0% {
+     width: 36px;
+     left: 0px; }
+   20% {
+     width: 42px;
+     left: -6px; }
+   40% {
+     width: 0;
+     left: 40px; }
+   100% {
+     width: 0;
+     left: 36px; } }
+ .fl-builder-ie-11 .pp-flip-box .pp-flipbox-description img,
+ .fl-builder-ie-10 .pp-flip-box .pp-flipbox-description img,
+ .fl-builder-ie-9 .pp-flip-box .pp-flipbox-description img {
+   width: 200px;
+   max-width: 200px !important; }
+
+ /* FL Post Feed */
+ .fl-post-feed-post {
+   border-bottom: 1px solid #e6e6e6;
+   margin-bottom: 30px;
+   padding-bottom: 10px; }
+
+ /* Headings */
+ h1.subcategory {
+   font-size: 20px;
+   margin-top: 40px; }
+
+ h2.fl-post-feed-title {
+   font-size: 24px; }
+
+ h2.fl-post-feed-title a {
+   color: #428BCA; }
+
+ /* Initial Cap */
+ .initial-cap h6,
+ .initial-cap h5,
+ .initial-cap h4,
+ .initial-cap h3,
+ .initial-cap h2,
+ .initial-cap h1 {
+   text-transform: initial; }
+
+ /* Footer Logo */
+ .footer-logo {
+   text-align: center; }
+
+ .footer-logo img {
+   max-width: 120px; }
+
+ /* Who We Are / Staff */
+ .page-id-62 .fl-module-pp-modal-box {
+   height: 0; }
+
+ /*********************
+ TABLET & SMALLER LAPTOPS
+ This is the typical size of a tablet, although it may also include
+ small laptop screens or (possibly?) giant phone screens.
+ *********************/
+ @media only screen and (min-width: 768px) {
+   /******************************************************************
+
+   Stylesheet: Tablet Stylesheet
+   Author: 2060 Digital
+
+   This stylesheet will affect tablet-size (or small desktop) screens.
+
+   ******************************************************************/
+   /*
+   Keep in mind that most customizations can and should be done in
+   the Wordpress theme customizer. This file only exists for anything
+   that can't be accomplished with the theme customizer/page builder.
+   */
+   body {
+     padding-left: 250px; }
+
+   section#sidebar {
+     position: fixed;
+     left: 0;
+     width: 250px;
+     height: 100%;
+     z-index: 999;
+     padding: 2em 0;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4); }
+     section#sidebar:before {
+       width: 250px; }
+
+   #i3-search-form {
+     width: 100%;
+     float: none; }
+
+   #i3-mobile-hamburger-container {
+     display: none; }
+
+   #i3-left-navigation ul {
+     max-height: 999px;
+     overflow: visible; }
+   #i3-left-navigation ul#menu-main-menu {
+     background: transparent;
+     box-shadow: none; }
+     #i3-left-navigation ul#menu-main-menu > li {
+       text-align: left;
+       position: relative; }
+       #i3-left-navigation ul#menu-main-menu > li#menu-item-7 {
+         margin: 10px 0; }
+       #i3-left-navigation ul#menu-main-menu > li:hover {
+         background: #315396; }
+         #i3-left-navigation ul#menu-main-menu > li:hover#menu-item-7 {
+           background: none; }
+           #i3-left-navigation ul#menu-main-menu > li:hover#menu-item-7 a {
+             background: #007041 !important; }
+         #i3-left-navigation ul#menu-main-menu > li:hover ul.sub-menu {
+           max-width: 999px;
+           width: 240px !important;
+           font-size: 14px !important;
+           transition: max-width .5s ease-in;
+           -webkit-transition: max-width .5s ease-in;
+           -moz-transition: max-width .5s ease-in;
+           -ms-transition: max-width .5s ease-in;
+           -o-transition: max-width .5s ease-in;
+           border: 3px solid #315396;
+           box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.4); }
+         #i3-left-navigation ul#menu-main-menu > li:hover.menu-item-has-children:after {
+           left: 100%;
+           top: 50%;
+           border: solid transparent;
+           content: " ";
+           height: 0;
+           width: 0;
+           position: absolute;
+           pointer-events: none;
+           border-color: rgba(49, 60, 150, 0);
+           border-right-color: #fff;
+           border-width: 12px;
+           margin-top: -12px;
+           margin-left: -24px;
+           z-index: 999; }
+         #i3-left-navigation ul#menu-main-menu > li:hover > a {
+           color: #fff;
+           text-decoration: none; }
+       #i3-left-navigation ul#menu-main-menu > li a {
+         color: #333;
+         padding: .75em 1.5em; }
+       #i3-left-navigation ul#menu-main-menu > li ul.sub-menu {
+         max-height: 999px;
+         overflow: hidden;
+         width: 160px;
+         max-width: 0px;
+         position: absolute;
+         left: 247px;
+         top: -10px;
+         padding: 0;
+         background: #ffffff;
+         /* Old browsers */
+         background: -moz-linear-gradient(left, #ffffff 0%, #dddddd 100%);
+         /* FF3.6-15 */
+         background: -webkit-linear-gradient(left, #ffffff 0%, #dddddd 100%);
+         /* Chrome10-25,Safari5.1-6 */
+         background: linear-gradient(to right, #ffffff 0%, #dddddd 100%);
+         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=1 );
+         /* IE6-9 */
+         z-index: 998;
+         border-left: none; }
+         #i3-left-navigation ul#menu-main-menu > li ul.sub-menu li a {
+           text-align: left;
+           padding-right: 5px; }
+           #i3-left-navigation ul#menu-main-menu > li ul.sub-menu li a:hover {
+             color: #315396;
+             background-color: #fff;
+             text-decoration: none;
+             padding-right: 0; }
+
+   #i3-left-navigation li.nav-contact-link a {
+     display: inline-block;
+     background: #315396;
+     margin: 0 10px;
+     padding-left: 0.75em 15px !important;
+     border-radius: 5px;
+     color: #ffffff !important;
+     font-weight: 700 !important; }
+     #i3-left-navigation li.nav-contact-link a:hover {
+       background: #315396; } }
+ @media only screen and (min-width: 768px) and (max-height: 585px) {
+   #menu-item-9 {
+     display: none !important; } }
+ /*********************
+ DESKTOP
+ This is the average viewing window. So Desktops, Laptops, and
+ in general anyone not viewing on a mobile device. Here's where
+ you can add resource intensive styles.
+ *********************/
+ @media only screen and (min-width: 992px) {
+   /******************************************************************
+
+   Stylesheet: Desktop Stylesheet
+   Author: 2060 Digital
+
+   This stylesheet will affect desktop-size screens.
+
+   ******************************************************************/
+   /*
+   Keep in mind that most customizations can and should be done in
+   the Wordpress theme customizer. This file only exists for anything
+   that can't be accomplished with the theme customizer/page builder.
+   */ }
+ /*********************
+ RETINA (2x RESOLUTION DEVICES)
+ This applies to the retina iPhone (4s) and iPad (2,3) along with
+ other high-density displays with at least a 2x resolution.
+ *********************/
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+   /******************************************************************
+
+   Stylesheet: 2x Density Stylesheet
+   Author: 2060 Digital
+
+   ******************************************************************/
+   /*
+   You probably don't need to use this file, but in case you do want to
+   have styles specific to retina/high-density displays, here you go.
+   */ }
